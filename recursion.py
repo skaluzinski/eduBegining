@@ -85,3 +85,34 @@ def potega(a,b):
 print(potega(3,6))
 print(potega(20,1))
 print(potega(3,3))
+""""
+def powoinf(a,b): #check if int is power of another int
+    low = min(a,b)
+    high = max(a,b)
+    if high % low == 0:
+       return powoinf(low,high/low)
+    if a == b :
+        print("tak")
+        return 0
+powoinf(16,2)
+"""
+
+def is_Power(x, y): #  check if an integer is the power of another integer
+   while (x%y == 0):
+       x = x / y
+   return x == 1
+print(is_Power(14,2))
+print(is_Power(16,2)
+
+
+      #6. Write a Python program to check if a number is a power of a given base.Go to the editor
+  #          Input : 128,2
+  #          Output : True      TODO https://www.w3resource.com/python-exercises/challenges/1/index.php#EDITOR
+
+#7 Write a Python program to find a missing number from a list.
+def missing_number(num_list): #Take a list
+    return sum(range(num_list[0],num_list[-1]+1)) - sum(num_list) # add all elements from first to last and then
+
+print(missing_number([1,2,3,4,6,7,8]))
+
+print(missing_number([10,11,12,14,15,16,17]))
